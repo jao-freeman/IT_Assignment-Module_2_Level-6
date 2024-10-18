@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>News Homepage</title>
+	<link rel="stylesheet" href="./styles./News-Homepage-Body.css">
+	<link rel="stylesheet" href="./styles./News-Homepage-Navbar.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="nav-bar" id="menu">
+		<img src="./assets./images./logo.svg" class="logo">
+	  <img src="./assets./images./icon-menu.svg" class="menu-icon" id="menuIcon">
+
+	  <!-- Creating the navigation bar -->
+		<div class="navlinks-container" id="navlinksBackground">
+			<div class="nav-links" id="menuContent">
+  			<span class="close-icon" id="closeIcon">&times;</span>
+			  <a href="#">Home</a>
+			  <a href="#">New</a>
+			  <a href="#">Popular</a>
+			  <a href="#">Trending</a>
+			  <a href="#">Categories</a>
+		 	</div>
+		</div>
+	</div>
+	<div class="nav-bar2">
+		<img src="./assets./images./logo.svg" class="logo2">
+
+	  <!-- Creating navigation bar for laptop view -->
+		<div class="nav-links2">
+		  <a href="#">Home</a>
+		  <a href="#">New</a>
+		  <a href="#">Popular</a>
+		  <a href="#">Trending</a>
+		  <a href="#">Categories</a>
+	 	</div>
+	</div>
+
+	<!-- Main section of the webpage -->
+	<div class="row-1-container">
+		<div class="main-content">
+			<div class="main-content-image"><img src="./assets./images./image-web-3-mobile.jpg"></div>
+			<div class="main-content-image2"><img src="./assets./images./image-web-3-desktop.jpg"></div>
+			<div class="main-content-preview">
+				<h1 class="main-content-heading">The Bright Future of Web 3.0?</h1>
+				<div class="main-content-description">
+					<p> We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+ 					But is it really fulfilling its promise?</p>
+ 					<button class="read-more">READ MORE</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- The side content of the main content-->
+		<div class="side-container">
+			<h1 class="new">New</h1>
+			<div class="side-article-1"><h3>Hydrogen VS Electric Cars</h3>
+					 <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+			</div>
+			<div class="side-article-2"><h3>The Downsides of AI Artistry</h3>
+					 <p>What are the possible adverse effects of on-demand AI image generation?</p>
+			</div>
+			<div class="side-article-3"><h3 >Is VC Funding Drying Up?</h3>
+					 <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="row-2-container">
+		<div class="preview">
+			<img src="./assets./images./image-retro-pcs.jpg">
+			<div class="prev-desc">
+				<h1>01</h1>
+				<h3>Reviving Retro PCs</h3>
+				<p>What happens when old PCs are given modern upgrades?</p>
+			</div>
+		</div>
+
+		<div class="preview">
+			<img src="./assets./images./image-top-laptops.jpg">
+			<div class="prev-desc">
+				<h1>02</h1>
+				<h3 class="h3">Top 10 Laptops of 2022</h3>
+				<p>Our best picks for various needs and budgets.</p>
+			</div>
+		</div>
+
+		<div class="preview">
+			<img src="./assets./images./image-gaming-growth.jpg">
+			<div class="prev-desc">
+				<h1>03</h1>
+				<h3>The Growth of Gaming</h3>
+				<p>How the pandemic has sparked fresh opportunities.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Javascript for the dropdown menu -->
+	<script>
+		// Creating a background for the dropdown menu
+		var myDropdownMenu = document.getElementById('navlinksBackground');
+
+		// Placing/placing the dropdown menu on the background
+		var menuButton = document.getElementById('menuIcon');
+		var dropdownContent = document.getElementById('menuContent');
+
+		// What happens when the menu icon is clicked
+		menuButton.onclick = function() {
+			myDropdownMenu.style.display = "block";
+			dropdownContent.src = this.src;
+		}
+
+		// Setting up the closs button
+		var closeButton = document.getElementById('closeIcon');
+		closeButton.onclick = function() {
+			myDropdownMenu.style.display = "none";
+		}
+	</script>
+</body>
+</html>
